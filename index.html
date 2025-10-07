@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:whitesmoke;
+        }
+        .table{
+            position:relative;
+            height: 100vh;
+            width: 100vw;
+            display:flex;
+            background-image:linear-gradient(to bottom right,rgba(8, 0, 255, 0.756),rgb(0, 200, 255));
+        }
+        .card{
+            height:92%;
+            width:93%;
+            position:absolute;
+        }
+        .c1{
+            left:3%;
+            top:3%;
+            background-color: white;
+            border:2px solid green;
+        }
+        .c2{
+            left:4%;
+            top:4%;
+            background-color: white;
+            border:2px solid yellow;
+        }
+        .c3{
+            left:5%;
+            top:5%;
+            background-color: white;
+            border:2px solid red;
+        }
+        .c4{
+            left:6%;
+            top:6%;
+            background-color: white;
+            border:2px solid orange;
+        }
+        .title{
+            height: 6%;
+            width: 15%;
+            position:absolute;
+            text-align: center;
+            padding-top:0.74%;
+            left:-3%;
+            border-radius:50%;
+            border:1px solid black;
+        }
+        .card:hover{
+            z-index:100000;
+        }
+        .c1title{
+            bottom:1%;
+            background-color:green;
+        }
+        .c2title{
+            bottom:10%;
+            background-color:yellow;
+        }
+        .c3title{
+            bottom:19%;
+            background-color:red;
+        }
+        .c4title{
+            bottom:28%;
+            background-color:orange;
+        }
+        .aboutperson{
+            position:absolute;
+            height:89%;
+            width: 49%;
+            right:5%;
+            top:5%;
+            background-color: white;
+            border:1.5px solid orange;
+            padding:1rem;
+            text-align: justify;
+            border-radius:10px;
+            overflow: auto;
+            color:black;
+            scrollbar-width: none;
+        }
+        .kam{
+            padding:2%;
+            border-bottom:2px solid orange;
+        }
+        .profileimage{
+            position:absolute;
+            top:5%;
+            left:5%;
+            height:89%;
+            width:40%;
+            border:1.5px solid orange;
+            border-radius:10px;
+        }
+        .personname{
+            background-color:orange;
+            display:inline;
+            position:absolute;
+            bottom:-3%;
+            width:60%;
+            left:10%;
+            border-radius:10px;
+            padding:0.4em;
+            text-align: center;
+            font-size:auto;
+        }
+        img{
+            width:100%;
+            height:100%;
+            border-radius:10px;
+        }
+        #education{
+            margin:1% 5% 1% 5%;
+            padding:1%;
+            border-bottom:2px solid red;
+        }
+        #experience{
+            margin:1% 5% 2% 5%;
+            padding:1%;
+            border-bottom:2px solid yellow;
+        }
+        .experience{
+            padding-left:8%;
+            width:90%;
+            height:82%;
+            margin-left:5%;
+        }
+        .work{
+            width: 100%;
+            height: auto;
+            border:1px solid yellow;
+            border-radius:10px;
+            padding:2%;
+            margin-top:1%;
+        }
+        .education{
+            padding-left:8%;
+            width:90%;
+            height:82%;
+            margin-left:5%;
+        }
+        .course{
+            width: 100%;
+            height: auto;
+            border:1px solid red;
+            border-radius:10px;
+            padding:2%;
+            margin-top:1%;
+        }
+        .course:hover{
+            box-shadow: 5px 4px rgba(0, 0, 0, 0.1);
+        }
+        .work:hover{
+            box-shadow: 5px 4px rgba(0, 0, 0, 0.1);
+        }
+        #college{
+            border-bottom:1.5px solid red;
+            margin-bottom:2%;
+        }
+        .gallary{
+            margin:1% 5% 1% 5%;
+            padding:1%;
+            border-bottom:2px solid green;
+        }
+        .photos{
+            width: 90%;
+            height: 80%;
+            margin:2% 5% 2% 5%;
+            display:flex;
+            gap:2%;
+            flex-wrap: wrap;
+            border-radius:10px;
+            scrollbar-width: none;
+            overflow: auto;
+        }
+        .image{
+            width: 32%;
+            height: 33%;
+            border-radius:10px;
+            border:1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="card c1"><div class="title c1title">Gallary</div>
+        <h1 class="gallary"> Achivements Gallary</h1>
+        <div class="photos">
+            <div class="image">
+                <img class="photo" src="elephantdance.jpeg" alt="">
+            </div>
+            <div class="image">
+                <img class="photo" src="elephantdance.jpeg" alt="">
+            </div>
+            <div class="image">
+                <img class="photo" src="elephantdance.jpeg" alt="">
+            </div>
+            <div class="image">
+                <img class="photo" src="elephantdance.jpeg" alt="">
+            </div>
+            <div class="image">
+                <img class="photo" src="elephantdance.jpeg" alt="">
+            </div>
+            <div class="image">
+                <img class="photo" src="elephantdance.jpeg" alt="">
+            </div>
+            <div class="image">
+                <img class="photo" src="elephantdance.jpeg" alt="">
+            </div>
+            <div class="image">
+                <img class="photo" src="elephantdance.jpeg" alt="">
+            </div>
+            <div class="image">
+                <img class="photo" src="elephantdance.jpeg" alt="">
+            </div>
+             
+        </div>
+    </div>
+        <div class="card c2"><div class="title c2title">Work Experience</div>
+         <h1 id="experience">Work Expericence</h1>
+            <div class="experience">
+                <div class="work">
+                    <h3 id="company">Bachalur of Engineering - 2023 : 2027</h3>
+                    <p>Sri Sairam College of Engineering, Anekal, Bengaluru <br>
+                    CGPA: 8.5
+                    </p>
+                </div>
+                <div class="work">
+                    <h3 id="company">Bachalur of Engineering - 2023 : 2027</h3>
+                    <p>Sri Sairam College of Engineering, Anekal, Bengaluru <br>
+                    CGPA: 8.5
+                    </p>
+                </div>
+                <div class="work">
+                    <h3 id="company">Bachalur of Engineering - 2023 : 2027</h3>
+                    <p>Sri Sairam College of Engineering, Anekal, Bengaluru <br>
+                    CGPA: 8.5
+                    </p>
+                </div>
+                <div class="work">
+                    <h3 id="company">Bachalur of Engineering - 2023 : 2027</h3>
+                    <p>Sri Sairam College of Engineering, Anekal, Bengaluru <br>
+                    CGPA: 8.5
+                    </p>
+                </div>
+            </div>
+            
+    </div>
+        <div class="card c3">
+            <div class="title c3title">Education</div>
+            <h1 id="education">Education</h1>
+            <div class="education">
+                <div class="course">
+                    <h3 id="college">Bachalur of Engineering - 2023 : 2027</h3>
+                    <p>Sri Sairam College of Engineering, Anekal, Bengaluru <br>
+                    CGPA: 8.5
+                    </p>
+                </div>
+                <div class="course">
+                    <h3 id="college">PCMB - 2021 : 2023</h3>
+                    <p>Pupil Tree P U College, Ballari <br>
+                    Percentage: 89%
+                    </p>
+                </div>
+                <div class="course">
+                    <h3 id="college">SSLC / 10<sup>th</sup> - 2020 : 2021</h3>
+                    <p>Bhrma Chaithnya E-techno School, Ballari<br>
+                    Percentage: 79%
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card c4">
+        <div class="aboutperson">
+            <h1 class="kam">Know About Me</h1>
+            <p style="padding-top:5%;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim obcaecati quidem, tenetur laboriosam dolorem non fugiat nesciunt iste voluptate maiores, ut nostrum aperiam vero aut nam delectus sequi dolore nobis.
+                Quas eligendi quos illo, magni et at repellat accusantium sunt error minus qui praesentium sapiente quisquam consequuntur dolorem a explicabo odit repudiandae incidunt voluptatibus cumque sint, distinctio officia adipisci. Dolore?
+                Aperiam architecto nobis voluptas nulla ut consequatur ullam sed eveniet alias, enim deleniti ipsam deserunt ad repellendus labore corrupti nesciunt totam cumque mollitia illo autem. Vel minus pariatur aliquam possimus!
+                Dolore iusto quisquam qui atque sapiente doloribus cum nobis vitae itaque, libero alias et repellendus quibusdam quidem magnam ipsa praesentium maxime nulla vero fugit? Deserunt laudantium aperiam minus corrupti ducimus.
+                Dicta distinctio laudantium deleniti aperiam cum consequuntur corrupti magnam repellat harum sapiente eveniet earum, ex vitae cupiditate fugiat alias magni, esse autem exercitationem nesciunt quasi. Asperiores iste expedita illum adipisci.
+                Cupm, corporis id deserunt inventore earum aspernatur tempora quisquam omnis natus doloribus consequuntur voluptas minus consectetur nesciunt sed accusamus ducimus beatae quia. Quos ex quasi dolores similique.
+                Provident quos esse eum incidunt perspiciatis, dolore aut! Aut quaerat delectus at pariatur distinctio officia quas temporibus fugiat ipsum aperiam laudantium dolorum voluptate, excepturi dolor. Repellendus deserunt eum numquam voluptas.
+                Autem velit aliquid unde voluptate ex. Temporibus illo quia, ab qui dicta placeat corporis a voluptas adipisci ullam quaerat. Repellendus quidem sapiente, provident illum praesentium error ipsam explicabo asperiores dolor?
+                Non doloremque obcaecati laboriosam minus, rerum ad sed dolorum, praesentium perspiciatis corrupti possimus repellat cupiditate beatae, vitae optio dignissimos aperiam reprehenderit inventore minima sapiente numquam fugiat tempore. Adipisci, excepturi tempore?
+                Recusandae at cumque omnis doloremque officiis fuga adipisci dolore optio impedit veniam reprehenderit fugit sed natus, quisquam sint unde numquam praesentium necessitatibus facere itaque ex quod quo mollitia? Unde, sint.
+                Assumenda exercitationem distinctio voluptatem. Eum quam consequuntur corporis dicta reiciendis hic ipsam veniam? Perferendis reprehenderit repellendus iste harum, tempora fuga sunt quidem sit. Suscipit molestias voluptate vel ut facilis aliquid!
+                Cupiditate beatae consectetur natus modi, minus nostrum atque odit obcaecati corrupti, eligendi incidunt quidem vitae doloremque eveniet quod pariatur quos nemo soluta suscipit impedit unde itaque repellat sit. Consequatur, repudiandae!
+                Vitae delectus laborum numquam nam earum vero optio sequi assumenda explicabo vel. Magni veniam autem nulla corporis quidem, consequuntur fugit. Culpa dolorum porro modi neque repellendus debitis atque sit cumque.
+                Debitis, eveniet. Porro beatae veritatis incidunt eaque, quam id amet minus quisquam illum ex mollitia ea adipisci non sed iusto ipsa nobis fuga et earum. Unde numquam vel doloremque dolor!
+                Quam, aut natus? Possimus expedita nulla esse sit placeat unde maiores incidunt, laborum deserunt necessitatibus commodi ea nesciunt, beatae modi quis cum neque quo nisi iure? Aliquam explicabo fugit optio!
+                Minus omnis eos numquam atque odio, labore magni nam maxime inventore, sunt repudiandae! Aliquid ab officia, dolore, illum sit dignissimos fugit, maiores aliquam placeat voluptas incidunt explicabo. Commodi, quos eveniet!
+                Sed, odit, distinctio hic aperiam inventore commodi voluptatibus quia asperiores, vero recusandae deserunt accusamus perferendis veritatis aliquam possimus? Numquam sed, dolores cumque modi quia omnis eius animi architecto culpa obcaecati?
+                Reprehenderit harum porro, rem aut ipsum commodi enim voluptate vero deleniti optio nostrum facere. Tempore iusto culpa perspiciatis minus, fugiat inventore accusamus consequuntur quis commodi expedita tenetur repellat explicabo non.
+                Facilis assumenda placeat officiis praesentium, sit dolorem distinctio consectetur libero! Quas magnam nihil excepturi, cumque non repellendus. Vitae sint totam accusantium illo, fuga voluptate voluptates provident cupiditate optio consequatur soluta!
+            </p>
+        </div>
+        <div class="profileimage">
+            <img src="elephantdance.jpeg" alt="profilimage">
+            <h3 class="personname"> Thirumala Reddy D </h3>
+        </div>
+        <div class="title c4title">Biography</div>
+    </div>
+    </div>
+</body>
+</html>
